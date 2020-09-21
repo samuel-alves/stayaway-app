@@ -107,7 +107,7 @@ function* watchAppStateChange() {
 
       if (! onboarding && previousState !== nextState) {
         if (nextState === 'active') {
-          try{
+          try {
             yield call(TrackingManager.sync);
 
             // Get status
